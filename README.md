@@ -1,200 +1,62 @@
-<div align="center">
-  <br>
-
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
-
-  <h1>JEKYLL YAT THEME</h1>
-
-</div>
-
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
-
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
-
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
-
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
-
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
-
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
-
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
-
+## **How to bulid?**
+---
 <br>
+### 1. repository 생성
+---
+- [leesom60](https://leesom60.github.io/) 원격 저장소를 생성하였습니다. 
+- 'webProject' 로컬 저장소를 만들고 원격 저장소를 clone하였습니다.
 
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
+### 2. 첫 markdown file 작성
+---
+- git에 관해 설명하는 post를 게시하고자 git.md 파일을 [dillinger.io](dillinger.io)로 작성하였습니다. 
+    - 모든 md 파일은 [dillinger.io](dillinger.io)로 작성하였습니다. 
 
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
+### 3. Jekyll 설치
+---
+``` jekyll new . --force``` 명령어로 로컬 저장소에 jekyll을 설치하였습니다.
 
-<p align="center">
+### 4. git.md post
+---
+1) 이전에 만든 git.md를 _posts 디렉토리로 이동하였습니다 
+2) 이를 add, commit, push하여 post하였습니다.
 
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
+### 5. 2개의 post 생성
+---
+jekyll과 markdown에 대해 설명하는 추가적인 2개의 markdown 파일을 작성하고 post하였습니다.
 
-</p>
+### 6. 테마 적용
+---
+[jekyllthemes.org](http://jekyllthemes.org/)에서 'YAT THEME'를 선택하였습니다.
+> [해당 테마를 사용할 수 있는 github link](https://github.com/jeffreytse/jekyll-theme-yat/)  
 
-<h4 align="center">BANNER</h4>
+1. YAT 테마를 ```git clone```하여 로컬 저장소에 받아왔습니다.
+2. _posts 디렉토리를 제외한 모든 파일과 디렉토리들을 로컬저장소에 덮어썼습니다.
 
-<p align="center">
+### 7. _config.yml 수정
+---
+원래 초반에 해야 했었던 작업이었지만 잊어버려서 테마를 적용한 후 _config.yml 파일을 수정했습니다. 
 
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
+### 8. 댓글 기능 추가 시도
+---
+1. disqus에 가입하고 
+2. disqus 사이트를 생성하고
+3. _config.yml과 post.html, _posts/*.md 파일에 disqus를 반영하였으나
 
-</p>
+> We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.
 
-## Features
+라는 error가 발생하며 댓글 기능을 구현할 수 없었습니다. 
 
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
+문제가 무엇인지 알아보기 위해 구글링을 하였더니 
+**Disqus를 사용 중인 사이트를 "Trusted Domain(신뢰할 수 있는 도메인)"으로 등록**
+하라는 해결책이 일반적이었습니다.
 
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
+그러나 이를 적용함에도 불구하고 erro는 계속 발생하였습니다.
 
-## Installation
+### 9. favicon 적용
+---
+1. [www.flaticon.com](https://www.flaticon.com/) 사이트에서 ![대체 텍스트](https://cdn-icons-png.flaticon.com/512/49/49046.png) 
+위의 이미지를 선정하였습니다.
 
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-yat
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-
-```bash
-$ gem install jekyll-theme-yat
-```
-
-### Remote Theme Method with GitHub Pages
-
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
-
-To install:
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-## Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-## License
-
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+2. [www.favicon-generator.org](https://www.favicon-generator.org/) 사이트에서 위의 이미지를 favicon으로 변환하였습니다.
+3. 변환한 파일의 압축을 풀고 파일의 이름을 ```favicon.ico```로 바꾼 후 assets/ 디렉토리 밑으로 이동하였습니다.
+4. ```_includes/head/custom-head.html``` 경로의 파일을 수정해준 후 원격 저장소에 업로드하였습니다.
