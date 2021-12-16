@@ -1,10 +1,12 @@
 ## **How to bulid?**
----
+---  
+
 
 ### 1. repository 생성
 ---
 - [leesom60](https://leesom60.github.io/) 원격 저장소를 생성하였습니다. 
-- 'webProject' 로컬 저장소를 만들고 원격 저장소를 clone하였습니다.
+- 'webProject' 로컬 저장소를 만들고 원격 저장소를 clone하였습니다.  
+  
 
 ### 2. 첫 markdown file 작성
 ---
@@ -66,7 +68,7 @@ jekyll과 markdown에 대해 설명하는 추가적인 2개의 markdown 파일�
 
 > **문제점 1**
 
-```_config.yml``` 파일의 url 부분에 ```https://leesom60.github.io```가 들어가야 하는데 ""로 비어 있었다.
+```_config.yml``` 파일의 url 부분에 ```https://leesom60.github.io```가 들어가야 하는데 ""로 비어 있었습니다.
 
 > **문제점 2**
 
@@ -75,11 +77,11 @@ yat theme의 파일을 덮어쓴 후 disqus 댓글 설정하는 부분에
 disqus:
 shortname: 
 ```
-만 적혀져 있었기 때문에 그 부분만 구현했다. 그러나 정상적으로 동작하게 하려면
+만 적혀져 있었기 때문에 그 부분만 구현했습니다. 그러나 정상적으로 동작하게 하려면
 ```
 comments:
     provider: "disqus"
     disqus:
     shortname: "blog-with-git"
 ```
-이렇게 구현해야 한다.
+이렇게 구현해야 합니다.
