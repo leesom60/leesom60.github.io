@@ -28,12 +28,6 @@ title: Blog With Git
 email: somyeong60@kookmin.ac.kr
 author: Lee So Myeong
 
-# Custom vars
-comment:
-  provider: "disqus"
-  disqus:
-    shortname:  "blog-with-git"
-
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
 # * current year: {currentYear}
@@ -187,8 +181,9 @@ defaults:
 # paginate: 5
 
 # Disqus comments
-# disqus:
-#   shortname: "Your Disqus username"
+ disqus:
+   shortname: "blog-with-git"
+     
 
 # Gitment comments
 # gitment:
