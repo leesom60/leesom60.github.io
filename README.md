@@ -1,7 +1,6 @@
 ## **How to bulid?**
 ---
 
-
 ### 1. repository 생성
 ---
 - [leesom60](https://leesom60.github.io/) 원격 저장소를 생성하였습니다. 
@@ -9,7 +8,7 @@
 
 ### 2. 첫 markdown file 작성
 ---
-- git에 관해 설명하는 post를 게시하고자 ```git.md``` 파일을 [dillinger.io](dillinger.io)로 작성하였습니다. 
+- git에 관해 설명하는 post를 게시하고자 git.md 파일을 [dillinger.io](dillinger.io)로 작성하였습니다. 
     - 모든 md 파일은 [dillinger.io](dillinger.io)로 작성하였습니다. 
 
 ### 3. Jekyll 설치
@@ -18,7 +17,7 @@
 
 ### 4. git.md post
 ---
-1) 이전에 만든 ```git.md```를 _posts 디렉토리로 이동하였습니다 
+1) 이전에 만든 git.md를 _posts 디렉토리로 이동하였습니다 
 2) 이를 add, commit, push하여 post하였습니다.
 
 ### 5. 2개의 post 생성
@@ -35,13 +34,13 @@ jekyll과 markdown에 대해 설명하는 추가적인 2개의 markdown 파일�
 
 ### 7. _config.yml 수정
 ---
-원래 초반에 해야 했었던 작업이었지만 잊어버려서 테마를 적용한 후 ```_config.yml``` 파일을 수정했습니다. 
+원래 초반에 해야 했었던 작업이었지만 잊어버려서 테마를 적용한 후 _config.yml 파일을 수정했습니다. 
 
 ### 8. 댓글 기능 추가 시도
 ---
 1. disqus에 가입하고 
 2. disqus 사이트를 생성하고
-3. ```_config.yml```과 ```post.html```, ```_posts/*.md``` 파일에 disqus를 반영하였으나
+3. _config.yml과 post.html, _posts/*.md 파일에 disqus를 반영하였으나
 
 > We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.
 
@@ -61,3 +60,26 @@ jekyll과 markdown에 대해 설명하는 추가적인 2개의 markdown 파일�
 2. [www.favicon-generator.org](https://www.favicon-generator.org/) 사이트에서 위의 이미지를 favicon으로 변환하였습니다.
 3. 변환한 파일의 압축을 풀고 파일의 이름을 ```favicon.ico```로 바꾼 후 assets/ 디렉토리 밑으로 이동하였습니다.
 4. ```_includes/head/custom-head.html``` 경로의 파일을 수정해준 후 원격 저장소에 업로드하였습니다.
+
+### 10. comments 구현 완료
+---
+
+> **문제점 1**
+
+```_config.yml``` 파일의 url 부분에 ```https://leesom60.github.io```가 들어가야 하는데 ""로 비어 있었다.
+
+> **문제점 2**
+
+yat theme의 파일을 덮어쓴 후 disqus 댓글 설정하는 부분에
+```
+disqus:
+shortname: 
+```
+만 적혀져 있었기 때문에 그 부분만 구현했다. 그러나 정상적으로 동작하게 하려면
+```
+comments:
+    provider: "disqus"
+    disqus:
+    shortname: "blog-with-git"
+```
+이렇게 구현해야 한다.
