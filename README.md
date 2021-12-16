@@ -1,6 +1,5 @@
 ## **How to bulid?**
----  
-
+--- 
 
 ### 1. repository 생성
 ---
@@ -38,7 +37,7 @@ jekyll과 markdown에 대해 설명하는 추가적인 2개의 markdown 파일�
 ---
 원래 초반에 해야 했었던 작업이었지만 잊어버려서 테마를 적용한 후 _config.yml 파일을 수정했습니다. 
 
-### 8. 댓글 기능 추가 시도
+### 8. comments 기능 구현 시도
 ---
 1. disqus에 가입하고 
 2. disqus 사이트를 생성하고
@@ -85,3 +84,5 @@ comments:
     shortname: "blog-with-git"
 ```
 이렇게 구현해야 합니다.
+
+두 문제점을 해결하니 comments가 정상적으로 구현되었습니다.
