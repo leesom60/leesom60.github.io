@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MyBlog
+title: Blog With Git
 email: somyeong60@kookmin.ac.kr
 author: Lee So Myeong
 
@@ -181,8 +181,8 @@ defaults:
 # paginate: 5
 
 # Disqus comments
- disqus:
-   shortname: "blog-with-git"
+disqus:
+  shortname: "blog-with-git"
      
 
 # Gitment comments
